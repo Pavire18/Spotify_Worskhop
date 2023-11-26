@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7109d51c44.js" crossorigin="anonymous"></script>
+    <script src="main.js" ></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/logo.png" alt="">
+    </header>
+    <div class="main-content">
+        <div class="card">
+            <div class="cover">
+                <img class="card__cover" src="assets/quevedo_cover.png" alt="">
+            </div>
+            <div class="info">
+                <div class="card__info">
+                    <p class="title"></p>
+                    <p class="author"></p>
+                </div>
+                <div class="timers">
+                    <p class="actualSeconds"></p>
+                    <p class="maxDuration"></p>
+                </div>
+                <div class="progressBar">
+                    <div class="progressBar--black"></div>
+                </div>
+                <div class="options">
+                    <i class="fa-solid fa-shuffle gray" onclick="activeRandom()"></i>
+                    <i class="fa-solid fa-rotate-right gray" onclick="activeRepeat()"></i>
+                </div>
+                <div class="player">
+                    <i onclick="changeSong(-1)" class="fa-solid fa-backward-step"></i>
+                    <i onclick="play()" class="fa-solid fa-play"></i>
+                    <i onclick="changeSong(1)" class="fa-solid fa-forward-step"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
